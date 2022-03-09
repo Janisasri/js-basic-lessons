@@ -29,10 +29,10 @@ let tipvalue=0.15;
 
 function  billInputFun(){
     billValue=parseFloat(billInput.value);
-   calculateTip();
+    calculateTip();
 }
 function  peopleInputFun(){
-    billValue=parseFloat(peopleInput.value);
+    peopleValue=parseFloat(peopleInput.value);
     calculateTip();
 
     if(peopleValue <1){

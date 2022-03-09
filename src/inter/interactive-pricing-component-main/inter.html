@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="slider.css"/>
+  <script defer src="inter.js"></script>
+  <title>Interactive pricing component</title>
+</head>
+<body>
+
+  <div class="bg-pattern">
+    <img src="./images/bg-pattern.svg" alt="" class="bg-pattern-img" />
+  </div>
+
+  
+
+  <header class="header">
+    <img src="./images/pattern-circles.svg" alt="" class="header-circles"/>
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial.</p>
+    <p>No credit card required.</p>
+  </header>
+
+
+  <div class="container">
+    <div class="title">
+      <h4>100K PageViews</h4>
+      <p class="price">$16.00
+        <span>/month</span></p>
+    
+    </div>
+
+
+    <input type="range" class="range" id="range" />
+
+    <p class="price">$16.00
+    <span>/month</span></p>
+
+    <div class="toggle">
+      <label class="name">Monthly Billing</label>
+      <input type="checkbox" class="checkbox" id="checkbox" />
+      <label for="checkbox" class="label">
+        <div class="ball"></div>
+      </label>
+      <label class="name">
+        Yearly Billing
+        <span>25% discount</span> 
+      </label>
+    </div>
+      
+    <div class="list">
+      <ul>
+        <li><img src="./images/icon-check.svg" alt="check icon"/>
+          Unlimited websites</li>
+        <li><img src="./images/icon-check.svg" alt="check icon"/>
+          100% data ownership</li>
+        <li><img src="./images/icon-check.svg" alt="check icon"/>
+          Email reports</li>
+      </ul>
+    
+      <button class="btn">Start my trial</button>
+    
+  </div>
+    </div>
+</body>
+</html>
