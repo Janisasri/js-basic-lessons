@@ -1,154 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
 
-*{
+* {
+    box-sizing: border-box;
     font-family: 'Libre Franklin',sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-body{
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    min-height: 100vh;
+body {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin: auto;
+    min-height: 100vh;
+    text-align: center;
+    width: 90%;
 }
-.logo{
+.logo {
     margin-top: 2em;
 }
-h1{
+h1 {
+    color:  hsl(0, 0%, 59%);
     font-size: 1.5em;
     font-weight: 300;
     padding: 1.3em 0 0.5em;
-    color:  hsl(0, 0%, 59%);
 }
-span{
-    font-weight: 700;
+span {
     color: hsl(209, 33%, 12%);
+    font-weight: 700;
 }
-h2{
+h2 {
+    color: hsl(209, 33%, 12%);
     font-size: 0.8em;
     font-weight: 600;
-    color: hsl(209, 33%, 12%);
 }
-form{
+form {
     display: flex;
     flex-direction: column;
+    gap: 0.5em;
     justify-content: center;
     margin: 2em 0;
     width: 80%;
-    gap: 0.5em;
 }
-input{
+input {
     border-radius: 50px;
 }
-#input-email{
+#input-email {
     border: 1px solid  hsl(223, 100%, 88%);
-    width: 100%;
     padding: 1em 0em 1em 2em;
+    width: 100%;
 }
-#submit-btn{
-    border: none;
+#submit-btn {
     background-color: hsl(223, 87%, 63%);
-    padding: 1em 0em;
+    border: none;
+    box-shadow: 0em 0.5em 0.5em hsla(210, 32%, 12%, 0.172);
     color: white;
     font-weight: 600;
-    box-shadow: 0em 0.5em 0.5em hsla(210, 32%, 12%, 0.172);
+    padding: 1em 0em;
 }
-textarea:focus , input:focus{
+textarea:focus , input:focus {
       outline: none;
 }
-h3{
-    text-align: center;
+h3 {
     color: hsl(354, 100%, 66%);
     font-size: 0.8em;
-    font-weight: 300;
     font-style: italic;
-    margin-bottom: 1.5em;
+    font-weight: 300;
     display: none;
+    margin-bottom: 1.5em;
+    text-align: center;
 }
-.illustration{
+.illustration {
     width: 90%;
 }
-footer{
+footer {
     margin-top: 5em;
 }
-.social-icons{
+.social-icons {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     gap: 1em;
+    justify-content: center;
 }
-.social-icons i{
+.social-icons i {
     border: 1px solid  hsl(223, 100%, 88%);
-    padding: 0.5em;
     border-radius: 50%;
-    height: 35px;
-    width: 35px;
-    object-fit: contain;
     color: hsl(223, 87%, 63%);
+    height: 35px;
+    object-fit: contain;
+    padding: 0.5em;
+    width: 35px;
 }
-p{
-    margin-top: 2em;
-    font-size: 0.8em;
+p {
     color: hsl(0, 0%, 59%);
+    font-size: 0.8em;
+    margin-top: 2em;
 }
-.error h3{
+.error h3 {
     display: block;
 }
-.error #input-email{
+.error #input-email {
     border-color: hsl(354, 100%, 66%);
 }
-@media screen and (min-width:992px){
-    .logo{
+@media screen and (min-width: 992px) {
+    .logo {
         margin-top: 1em;
     }
-    h1{
+    h1 {
         font-size: 2.5em;
         padding-top: 1em;
     }
-    h3{
-        /*display: block;*/
-        width: 100%;
-        margin-bottom: 0;
+    h3 {
         font-size: 0.7em;
-    }
-    form{
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
+        margin-bottom: 0;
         width: 100%;
-        gap:8em;
     }
-    #input-email{
+    form {
+        align-items: flex-start;
+        flex-direction: row;
+        gap:8em;
+        justify-content: center;
+        width: 100%;
+    }
+    #input-email {
         width: 150%;
     }
-    #submit-btn{
+    #submit-btn {
         margin-top: 0;
         width: 13%;
     }
-    .w-error{
-        width: 20%;
+    .w-error {
         display: flex;
         flex-direction: column;
+        width: 20%;
     }
 
-    .illustration{
+    .illustration {
         width: 40%;
     }
-    footer{
+    footer {
         margin-top: 2em;
     }
 
-    #submit-btn:hover{
+    #submit-btn:hover {
         background-color: hsl(223, 100%, 88%);
         cursor: pointer;
     }
-    .social-icons i:hover{
+    .social-icons i:hover {
         color: white;
         background-color:  hsl(223, 87%, 63%);
     }

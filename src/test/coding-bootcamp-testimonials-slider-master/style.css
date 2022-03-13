@@ -1,153 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
-html{
+html {
     font-family: 'Inter',sans-serif;
     font-size: 32px;
 }
-*{
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-.container{
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
+.container {
     align-items: center;
-    justify-content: center;
-    padding: 30px;
     background-position: center bottom;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px;
+    width: 100%;
 }
-.slider{
+.slider {
     display: block;
     height: 100%;
-    width: 100%;
-    max-width: 850px;
     margin: 0 auto;
+    max-width: 850px;
     position: relative;
-}
-.slide{
     width: 100%;
+}
+.slide {
+    align-items: center;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    align-items: center;
     text-align: center;
-}
-.slide-img{
     width: 100%;
-    margin: 0 auto;
-    height: 100%;
-    padding: 40px;
+}
+.slide-img {
     background-image: url('./images/pattern-bg.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    height: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    width: 100%;
 }
-
-.slide-text{
-    padding-top: 30px;
-    display: flex;
+.slide-text {
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
     background-image: url('./images/pattern-quotes.svg');
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: 80px;
-    background-position: top center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
 }
-.testimonial-text{
-    font-weight: 300;
-    font-size: .7rem;
-    line-height: 1rem;
+.testimonial-text {
     color: hsl(240,38%,20%);
+    font-size: .7rem;
+    font-weight: 300;
+    line-height: 1rem;
 }
-.author{
-    margin-top: 20px;
+.author {
     color: hsl(240,38%,20%);
     font-size: .5rem;
     font-weight: 700;
+    margin-top: 20px;
 }
-.author span{
+.author span {
     color: hsl(240,18%,77%);
     font-weight: 500;
     display: block;
 }
-.slide-img img{
+.slide-img img {
     height: 100%;
     width: 300px;
 }
 .next,
-.previous{
+.previous {
+    cursor: pointer;
     display: inline-block;
-    width: 50%;
     height: 100%;
     position: absolute;
-    cursor: pointer;
+    width: 50%;
 }
 .next:hover, 
-.previous:hover{
+.previous:hover {
     background-color: antiquewhite;
 }
-.button{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 315px;
-    width: 90px;
-    height: 45px;
-    box-shadow: -20px 12px 20px 12px hsla(240,18%,77%,0.52);
-    border-radius: 50px;
+.button {
     background-color: white;
+    border-radius: 50px;
+    box-shadow: -20px 12px 20px 12px hsla(240,18%,77%,0.52);
+    height: 45px;
+    left: 50%;
     overflow: hidden;
+    position: absolute;
+    top: 315px;
+    transform: translateX(-50%);
+    width: 90px;
 }
-.previous{
+.previous {
     left: 0;
 }
-.next{
+.next {
     right: 0;
 }
 .next::after,
-.previous::after{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
+.previous::after {
     background-position: center;
     background-size: auto;
+    background-repeat: no-repeat;
+    height: 100%;
+    content: '';
+    position: absolute;
+    width: 100%;
 }
-.next::after{
+.next::after {
     background-image: url('./images/icon-next.svg');
 }
-.previous::after{
+.previous::after {
     background-image: url('./images/icon-prev.svg');
 }
 
 @media only screen and (min-width: 768px) {
-    .slide{
+    .slide {
         flex-direction: row;
         text-align: left;
     }
-    .slide-text{
+    .slide-text {
+        align-items: flex-start;
         background-position: 10% top;
         background-size: 100px;
-        align-items: flex-start;
     }
-    .slide-img{
+    .slide-img {
         margin-left: -100px;
         z-index: -1;
     }
-    .slide-img img{
+    .slide-img img { 
         width: 400px;
     }
-    .button{
+    .button {
+        left: calc(100% - 400px);
         top: 415px;
         transform: translate(0);
-        left: calc(100% - 400px);
+        
     }
 }
-.slide-2{
+.slide-2 {
     display: none;
 }
