@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root {
+--dark-Grayish-Blue: hsl(232, 13%, 33%);
+--light-Grayish-Blue: hsl(234, 14%, 74%);
+--linear-Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+--grayish-Blue: hsl(233, 13%, 49%);
+--very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.container {
+    background-color: var(--very-Light-Grayish-Blue);
+    background-image: url('./images/bg-bottom.svg'), url('./images/bg-top.svg');
+    background-position: 0% 100% , 100% 0%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 18rem, 15rem;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 15px;
+    max-width: 100%;
+    min-height: 100%;
+}
+h1 {
+    color: var(--grayish-Blue);
+    font-size: 1.5em;
+    padding: 2rem 0;
+    text-align: center;
+}
+h2 {
+    font-size: 1em;
+}
+h3 {
+    font-size: 3.9em;
+    padding: 1rem 3rem;
+}
+h4 {
+    display: none;
+    font-size: 3.9em;
+    padding: 1rem 3rem;
+}
+p {
+    font-size: 1em;
+}
+.selector {
+    align-items: center;
+    color: var(--light-Grayish-Blue);
+    display: flex;
+    justify-content: center;
+}
+#selector-bar {
+    align-items: center;
+    background-color:hsl(237, 63%, 64%);
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    height: 1.5rem;
+    justify-content: flex-end;
+    margin: 0 1.5rem;
+    padding: 0.1rem;
+    width: 3rem;
+}
+#selector-ball {
+    background-color: white;
+    border-radius: 50%;
+    height: 1.3rem;
+    transition-duration: 5000;
+    width: 1.3rem;
+}
+#selector-bar:hover {
+    opacity: 0.6;
+}
+#cards {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    text-align: center;
+    width: 80%;
+}
+.card-left,
+.card-middle,
+.card-right {
+    background-color: white;
+    box-shadow: 0px 0px 19px -8px rgba(0,0,0,0.75);
+    padding: 1.3rem;
+    width: 100%;
+}
+.card-middle {
+    background:linear-gradient(hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+    border-radius: 10px;
+    color: white;
+    padding: 3rem 1.3rem;
+}
+.card-middle p,
+.card-left p,
+.card-right p {
+    padding: 1rem 0;
+}
+.card-left p,
+.card-right p {
+    color: var(--grayish-Blue);
+}
+.card-left {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.card-right {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#cards hr {
+    margin: auto;
+    opacity: 0.2;
+    width: 80%;
+}
+button {
+    background-color: hsl(237, 63%, 64%);
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+    color: white;
+    margin: 1.5rem auto 0.5rem auto;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    transition-duration: 3000;
+    width: 85%;
+}
+.card-middle button {
+    background-color: white;
+    color:hsl(237, 63%, 64%);
+}
+.card-middle button:hover {
+    background: transparent;
+    color: white;
+}
+button:hover {
+    background-color:transparent;
+    color:hsl(237, 63%, 64%);
+}
+/*Media Queries*/
+
+@media only screen and (max-width: 760px) {
+    #cards {
+        flex-direction: column;
+    }
+    .card-left,
+    .card-middle,
+    .card-right {
+        border-radius: 10px;
+        margin: 1rem;
+        width: 80%;
+    }
+}
