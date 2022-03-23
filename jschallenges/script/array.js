@@ -36,7 +36,7 @@ const newBikes = [
     'benotto',
     ...bikes.slice(2)
 ];
-console.log('newBikes: ' | newBikes);
+console.log('newBikes: ' + newBikes);
 
 //create a new array
 //then index 0 and 1 values from bikes is copied using the slice
