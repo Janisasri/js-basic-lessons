@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rt-pcr.css">
+    <script type="module" src="rt-pcr.js"></script>
+    <title>Rt-Pcr</title>
+</head>
+<body>
+    
+    <div class="heading">
+    <h2 class="head">RT-PCR FORM</h2>
+            <h3 class="head">Please fill the details✔</h3>
+    </div>
+    <div class="container">
+        <div class="fBox fBox-2">
+            <div class="inputBox"><br>
+                <label for="fname">First Name :</label><br><br><br>
+                <input type="text" name="fname" id="fname">
+            </div>
+            <div class="inputBox"><br>
+                <label for="lname">Last Name :</label><br><br><br>
+                <input type="text" name="lname" id="lname">
+            </div>
+            <div class="inputBox">
+                <label for="aadhar">Aadhar Numbar :</label><br><br><br>
+                <input type="text" name="aadhar" id="aadhar">
+            </div>
+            <div class="inputBox">
+                <label for="date-of-birth">Date Of Birth :</label><br><br><br>
+                <input type="date" name="dob" id="dob">
+            </div>
+            <div class="inputBox" id="check-gen">
+                <label for="city">city :</label><br><br><br>
+                <input type="text" name="city" id="city">
+                
+            </div>
+            <div class="inputBox">
+                <label for="date">Date of Test</label><br><br><br>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="inputBox">
+                <label for="time-of-test">Time Of Test :</label><br><br><br>
+                <input type="time" name="time" id="time">
+            </div>
+            
+            <div class="inputBox">
+                <label for="result">Result(Positive\Negative) :</label><br><br><br>
+                <input type="text" name="result" id="result">
+            </div>
+            <div class="inputBox">
+                <label for="lab">Lab Name :</label><br><br><br>
+                <input type="text" name="lab" id="lab">
+            </div>
+            
+            <div class="inputBox">
+                <label for="report">Report Number :</label><br><br><br>
+                <input type="text" name="report" id="report">
+            </div>
+            <div class="inputBox">
+                <label for="report">Gender :</label><br><br><br>
+                <input type="text" name="report" id="gender">
+            </div>
+           
+           
+            
+            <div class="buttons">
+ 
+                <button onclick="move()" class="btn">Add</button>
+                <div id="msg"></div>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" id="find" onkeyup="reset()" placeholder="Your search...">
+            <input type="submit" class="btn" onclick="myFunction()">
+            <div id="msg"></div>
+        </div>
+    </div>
+    </div>
+        <div class="fBox fBox-1">
+            <table id="table" style="border: 1;">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Aadhar Card Number</th>
+                    <th>Date Of Birth</th>
+                    <th>City</th>
+                    <th>Date Of Test</th>
+                    <th>time of test</th>
+                    <th>Result(Positive\Negative)</th>
+                    <th>Lab Name</th>
+                    <th>Report</th>
+                    <th>Gender</th>
+                </tr>
+            </table>
+        </div><br><br><br><br><br><br><br><br>
+        <div class="fBox fBox-1">
+            <table id="table1" style="border: 1;">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Aadhar Card Number</th>
+                    <th>Date Of Birth</th>
+                    <th>City</th>
+                    <th>Date Of Test</th>
+                    <th>time of test</th>
+                    <th>Result(Positive\Negative)</th>
+                    <th>Lab Name</th>
+                    <th>Report</th>
+                    <th>Gender</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>

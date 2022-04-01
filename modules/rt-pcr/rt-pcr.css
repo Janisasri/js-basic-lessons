@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    /* align-items: center; */
+    margin: auto;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    background-color: #ecf2f8;
+    font-family: "Manrope", serif;
+    font-weight: 500;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 100%;
+ }
+.container {
+        align-items: center;
+        margin-top: auto;
+        width: 100%;
+        padding: 10px;
+        line-height: 5px;
+        text-align: center;
+}
+.inputBox {
+   padding: 15px;
+}
+.btn {
+    
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    
+}
+input[type="text"] {
+    padding: 10px;
+    border-radius: 15px;
+}
+input[type="date"]{
+    padding: 10px;
+    border-radius: 15px;
+}
+input[type="time"]{
+    
+    padding: 10px;
+    border-radius: 15px;
+}
+#table,
+#table1 {
+  border: 1px solid black;
+  text-align: left;
+  width: 1350px;
+}
+#table tr th,
+#table1 tr th {
+  width: 10%;
+  text-align: center;
+  /* height: px; */
+  /* border: 1px solid black; */
+  line-height: 20px;
+  margin: 20px;
+  padding: 10px;
+}
+
