@@ -28,7 +28,8 @@ body {
 .inputBox {
    padding: 15px;
 }
-#btn {
+#btn,
+#submit {
     
         background-color: #4CAF50;
         border: none;
