@@ -1,2 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("../node_modules/bootstrap/dist/css/bootstrap.css");
+body {
+    text-align: center;
+    /* align-items: center; */
+    margin: auto;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    background-color: #ecf2f8;
+    font-family: "Manrope", serif;
+    font-weight: 500;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 100%;
+ }
