@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +15,7 @@ body {
     font-weight: 500;
     overflow: scroll;
     /* overflow-x: hidden; */
-    width: 100%;
+     width: 100%;
     margin-left: 100px; 
 }
  
@@ -26,15 +26,15 @@ body {
         padding: 10px;
         line-height: 5px;
         text-align: center;
-        /* margin-right: 50px; */
- } 
+         margin-right: 50px; 
+  } 
 .inputBox {
    padding: 15px;
 }
 #btn,
-#submit {
+#submit { 
         
-        background-color: #4CAF50;
+         background-color: #4CAF50;
         border: none;
         border-radius: 20px;
         color: white;
@@ -63,8 +63,8 @@ input[type="time"]{
     
     padding: 10px;
     border-radius: 15px;
-}
-/* #table,
+} 
+ table,
 #table1 {
   border: 1px solid black;
   text-align: left;
@@ -74,13 +74,13 @@ input[type="time"]{
 #table1 tr th {
   width: 10%;
   text-align: center;
-  /* height: px; */
-  /* border: 1px solid black; */
-  /* line-height: 20px;
+  height: px; 
+   border: 1px solid black; 
+   line-height: 20px;
   margin: 20px;
   padding: 10px;
-} */
-table {
+} 
+ table {
     border-collapse: collapse;
     width: 100%;
 }
@@ -97,5 +97,6 @@ tr:nth-child(even) {
 
 th {
     background-color:lightblue;
-    color:black;
+    color:black; 
+
 }
