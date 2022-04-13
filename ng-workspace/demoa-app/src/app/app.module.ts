@@ -38,7 +38,8 @@ const routes: Routes=[
     EmployeeFormComponent,BookListComponent,
     PriceDiscountPipe,BookComponent,
     TabComponent,BookCatlogComponent,
-    NewsComponent,MenuComponent, BookformComponent,
+    NewsComponent,MenuComponent,
+    BookformComponent,
     
   ],
   imports: [
