@@ -19,6 +19,8 @@ import { CustomerFormComponent } from './customer-form/customer-form.component';
 import { CountDisplayComponent } from './count-display/count-display.component';
 import { HitButtonComponent } from './hit-button/hit-button.component';
 import { BookformComponent } from './bookform/bookform.component';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { LifeCycleChildComponent } from './life-cycle-child/life-cycle-child.component';
 
 const routes: Routes=[
   {path: '', component:HomeComponent},
@@ -40,6 +42,8 @@ const routes: Routes=[
     TabComponent,BookCatlogComponent,
     NewsComponent,MenuComponent,
     BookformComponent,
+    LifeCycleComponent,
+    LifeCycleChildComponent,
     
   ],
   imports: [

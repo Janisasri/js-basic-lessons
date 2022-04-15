@@ -207,5 +207,11 @@
   </div> -->
 <!-- <app-book-list></app-book-list> -->
 <!-- <app-book-catlog></app-book-catlog> -->
-<app-menu></app-menu>
-<router-outlet></router-outlet>
+<!-- <app-menu></app-menu>
+<router-outlet></router-outlet> -->
+<h2>Welcome To LifeCycle Hooks</h2>
+<input type="text" [(ngModel)]="value"/>
+
+<button (click)="onShowOrHide()">SHOW/HIDE</button>
+<br><hr>
+<app-life-cycle [value]="value" *ngIf="showLifeCycle"></app-life-cycle>
